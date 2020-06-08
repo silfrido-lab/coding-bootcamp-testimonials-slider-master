@@ -18,6 +18,9 @@ body {
 
 .testimonial-text {
     font-weight: 300;
-    font-size: .8em;
+    font-size: .6em;
     text-align: center;
+    span {
+        display: block;
+    }
 }

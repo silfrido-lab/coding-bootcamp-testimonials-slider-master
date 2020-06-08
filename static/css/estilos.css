@@ -1,7 +1,8 @@
 .testimonial-content .testimonial-image {
-  height: 308px;
+  height: 311px;
   background: url(../../images/pattern-bg.svg) center no-repeat;
-  background-size: 249px, cover;
+  background-size: cover;
+  width: 330px;
   position: relative;
 }
 .testimonial-content .testimonial-image .testimonial-img {
@@ -35,8 +36,11 @@ body {
 
 .testimonial-text {
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-align: center;
+}
+.testimonial-text span {
+  display: block;
 }
 
 /*# sourceMappingURL=estilos.css.map */

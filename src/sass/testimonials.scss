@@ -1,10 +1,11 @@
 .testimonial-content {
     .testimonial-image {
-        height: 308px;
+        height: 311px;
         // border: 1px solid red;
         // background: url(../../images/image-tanya.jpg) center no-repeat;
         background: url(../../images/pattern-bg.svg) center no-repeat;
-        background-size: 249px, cover;
+        background-size: cover;
+        width: 330px;
         position: relative;
         .testimonial-img {
             max-width: 250px;
