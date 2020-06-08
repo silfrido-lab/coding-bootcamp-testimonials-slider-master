@@ -1,4 +1,6 @@
 .testimonial-content {
+    display: grid;
+    grid-row-gap: 1em;
     .testimonial-image {
         height: 311px;
         // border: 1px solid red;
@@ -18,5 +20,10 @@
             top: 30px;
             box-shadow: 0 50px 70px -50px;
         }
+    }
+    .testimonial-text-content {
+        background: url(../../images/pattern-quotes.svg) center top no-repeat;
+        background-size: 70px;
+        padding-top: .4em;
     }
 }

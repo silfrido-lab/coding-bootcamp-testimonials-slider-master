@@ -1,3 +1,7 @@
+.testimonial-content {
+  display: grid;
+  grid-row-gap: 1em;
+}
 .testimonial-content .testimonial-image {
   height: 311px;
   background: url(../../images/pattern-bg.svg) center no-repeat;
@@ -16,31 +20,50 @@
   top: 30px;
   box-shadow: 0 50px 70px -50px;
 }
+.testimonial-content .testimonial-text-content {
+  background: url(../../images/pattern-quotes.svg) center top no-repeat;
+  background-size: 70px;
+  padding-top: 0.4em;
+}
+
+.footer .wave {
+  background: url(../../images/pattern-curve.svg) bottom left no-repeat;
+  background-size: cover;
+  height: 100px;
+}
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   height: 100vh;
 }
 
 :root {
-  --dark-Blue: hsl(240, 38%, 20%);
-  --grayish-Blue: hsl(240, 18%, 77%);
+  --dark-Blue: rgb(32, 32, 70);
+  --grayish-Blue: rgb(186, 186, 207);
 }
 
 .wrapper {
   padding: 0 0.7em;
+  padding-top: 1em;
 }
 
 .testimonial-text {
+  color: var(--dark-Blue);
   font-weight: 300;
   font-size: 0.6em;
   text-align: center;
 }
 .testimonial-text span {
   display: block;
+  text-align: center;
+}
+.testimonial-text span:nth-child(1) {
+  padding-top: 2em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */
