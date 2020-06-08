@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,oBAAoB,CAAC;EACjB,MAAM,EAAE,aAAa;CAMxB;;AALI,AAAD,2BAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,aAAa;CACxB;;ADLL,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,OAAO;CACnB",
+    "sources": [
+        "estilos.scss",
+        "testimonials.scss"
+    ],
+    "names": [],
+    "file": "estilos.css"
+}

@@ -1,0 +1,21 @@
+.testimonial-content {
+    .testimonial-image {
+        height: 308px;
+        // border: 1px solid red;
+        // background: url(../../images/image-tanya.jpg) center no-repeat;
+        background: url(../../images/pattern-bg.svg) center no-repeat;
+        background-size: 249px, cover;
+        position: relative;
+        .testimonial-img {
+            max-width: 250px;
+            border-radius: 5px;
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 30px;
+            box-shadow: 0 50px 70px -50px;
+        }
+    }
+}

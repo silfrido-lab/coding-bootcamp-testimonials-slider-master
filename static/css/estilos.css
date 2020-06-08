@@ -1,0 +1,42 @@
+.testimonial-content .testimonial-image {
+  height: 308px;
+  background: url(../../images/pattern-bg.svg) center no-repeat;
+  background-size: 249px, cover;
+  position: relative;
+}
+.testimonial-content .testimonial-image .testimonial-img {
+  max-width: 250px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30px;
+  box-shadow: 0 50px 70px -50px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+:root {
+  --dark-Blue: hsl(240, 38%, 20%);
+  --grayish-Blue: hsl(240, 18%, 77%);
+}
+
+.wrapper {
+  padding: 0 0.7em;
+}
+
+.testimonial-text {
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
