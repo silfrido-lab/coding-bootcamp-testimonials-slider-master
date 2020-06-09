@@ -1,24 +1,25 @@
 .testimonial-content {
   display: grid;
   grid-row-gap: 1em;
+  justify-content: center;
 }
 .testimonial-content .testimonial-image {
   height: 311px;
   background: url(../../images/pattern-bg.svg) center no-repeat;
-  background-size: cover;
-  width: 330px;
+  background-size: 290px, cover;
   position: relative;
 }
 .testimonial-content .testimonial-image .testimonial-img {
-  max-width: 250px;
+  max-width: 225px;
   border-radius: 5px;
   width: 100%;
   margin: 0 auto;
   position: absolute;
   right: 0;
   left: 0;
-  top: 30px;
+  top: 45px;
   box-shadow: 0 50px 70px -50px;
+  object-fit: cover;
 }
 .testimonial-content .testimonial-text-content {
   background: url(../../images/pattern-quotes.svg) center top no-repeat;
@@ -47,7 +48,7 @@ body {
 }
 
 .wrapper {
-  padding: 0 0.7em;
+  padding: 0 0.5em;
   padding-top: 1em;
 }
 
