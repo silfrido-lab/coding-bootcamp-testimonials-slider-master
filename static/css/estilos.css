@@ -56,6 +56,14 @@
     right: 25%;
   }
 }
+.testimonial .testimonial-content .testimonial-image .antes:hover {
+  transform: scale(0.7);
+  /* Igual que: scaleX(0.7) scaleY(0.7) */
+}
+.testimonial .testimonial-content .testimonial-image .siguente:hover {
+  transform: scale(0.7);
+  /* Igual que: scaleX(0.7) scaleY(0.7) */
+}
 .testimonial .testimonial-content .testimonial-image .antes {
   display: flex;
   justify-content: center;
