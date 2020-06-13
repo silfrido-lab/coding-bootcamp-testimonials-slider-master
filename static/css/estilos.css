@@ -56,6 +56,16 @@
     right: 25%;
   }
 }
+.testimonial .testimonial-content .testimonial-image .antes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-content .testimonial-image .siguente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .testimonial .testimonial-content .testimonial-text-content {
   background: url(../../images/pattern-quotes.svg) center top no-repeat;
   background-size: 70px;

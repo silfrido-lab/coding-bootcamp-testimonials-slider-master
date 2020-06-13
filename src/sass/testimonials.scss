@@ -52,6 +52,16 @@
                     right: 25%;
                 }
             }
+            .antes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .siguente {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             // .antes::after {
             //     content: url(../../images/icon-next.svg);
             //     background-repeat: no-repeat;
