@@ -52,11 +52,11 @@
                     right: 25%;
                 }
             }
-            .antes:hover {
+            .antes:active {
                 transform: scale(0.7);
                 /* Igual que: scaleX(0.7) scaleY(0.7) */
             }
-            .siguente:hover {
+            .siguente:active {
                 transform: scale(0.7);
                 /* Igual que: scaleX(0.7) scaleY(0.7) */
             }

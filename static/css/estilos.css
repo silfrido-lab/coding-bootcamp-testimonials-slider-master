@@ -56,11 +56,11 @@
     right: 25%;
   }
 }
-.testimonial .testimonial-content .testimonial-image .antes:hover {
+.testimonial .testimonial-content .testimonial-image .antes:active {
   transform: scale(0.7);
   /* Igual que: scaleX(0.7) scaleY(0.7) */
 }
-.testimonial .testimonial-content .testimonial-image .siguente:hover {
+.testimonial .testimonial-content .testimonial-image .siguente:active {
   transform: scale(0.7);
   /* Igual que: scaleX(0.7) scaleY(0.7) */
 }
