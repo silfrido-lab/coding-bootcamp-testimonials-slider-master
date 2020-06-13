@@ -19,66 +19,82 @@
 <body>
     <div class="center">
         <main class="testimonial">
+
             <input type="radio" value="slide-1" name=" slider " id="slider-1" checked>
-            <input type="radio" value="slide-2" name=" slider " id="slider-2" checked>
+            <input type="radio" value="slide-2" name=" slider " id="slider-2">
+            <div class="tab-grid">
+                <section class="testimonial-content tabs-content" id="slide-1">
+                    <!-- <label for="slide-1"> -->
+                    <div class="testimonial-image">
+                        <img class="testimonial-img" src="images/image-tanya.jpg" width="200px" alt="tanya">
+                        <button class="button">
+                            <div class="antes">
+                                <label for="slider-1">
+                                    <img src="images/icon-prev.svg" alt="next" width="10px" height="15px">
+                                </label>
+                            </div>
+                            <div class="siguente">
+                                <label for="slider-2">
+                                    <img src="images/icon-next.svg" alt="next" width="10px" height="15px">
 
-            <section class="testimonial-content slide-1">
-                <!-- <label for="slide-1"> -->
-                <div class="testimonial-image">
-                    <img class="testimonial-img" src="images/image-tanya.jpg" width="200px" alt="tanya">
-                    <button class="button">
-                        <div class="antes">
-                            <label for="slider-1">
-                                <img src="images/icon-prev.svg" alt="next" width="10px">
-                            </label>
-                        </div>
-                        <div class="siguente">
-                            <label for="slider-2">
-                                <img src="images/icon-next.svg" alt="next" width="10px">
+                                </label>
+                            </div>
+                        </button>
 
-                            </label>
-                        </div>
-                    </button>
+                    </div>
+                    <div class="wrapper">
+                        <div class="testimonial-text-content ">
 
-                </div>
-                <div class="wrapper">
-                    <div class="testimonial-text-content">
-
-                        <p class="testimonial-text">
-                            “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ” <span>Tanya Sinclair</span> <span>UX Engineer </span>
-                            <!--If you want to lay the best foundation
+                            <p class="testimonial-text">
+                                “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ” <span>Tanya Sinclair</span> <span>UX Engineer </span>
+                                <!--If you want to lay the best foundation
                         possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” John Tarkpor Junior Front-end Developer -->
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-            </section>
-
+                </section>
 
 
-            <section class="testimonial-content slide-2 is-hidden">
-                <!-- <label for="slide-2"> -->
-                <div class="testimonial-image">
-                    <img class="testimonial-img" src="images/image-john.jpg" width="200px" alt="tanya">
 
-                </div>
-                <div class="wrapper">
-                    <div class="testimonial-text-content">
+                <section class="testimonial-content tabs-content is-hidden" id="slide-2">
+                    <!-- <label for="slide-2"> -->
+                    <div class="testimonial-image">
+                        <img class="testimonial-img" src="images/image-john.jpg" width="200px" alt="tanya">
 
-                        <p class="testimonial-text-front">
-                            " If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
-                            <span>John Tarkpor</span>
-                            <span>Junior Front-end Developer</span>
+                        <button class="button">
+                            <div class="antes">
+                                <label for="slider-1">
+                                    <img src="images/icon-prev.svg" alt="next" width="10px" height="15px">
+                                </label>
+                            </div>
+                            <div class="siguente">
+                                <label for="slider-2">
+                                    <img src="images/icon-next.svg" alt="next" width="10px" height="15px">
 
-                        </p>
+                                </label>
+                            </div>
+                        </button>
+
                     </div>
-                </div>
+                    <div class="wrapper">
+                        <div class="testimonial-text-content">
 
-                <button class="button">
+                            <p class="testimonial-text-front">
+                                " If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+                                <span>John Tarkpor</span>
+                                <span>Junior Front-end Developer</span>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <button class="button">
                     <div class="antes"></div>
                     <div class="siguente"></div>
-                </button>
-            </section>
+                </button> -->
+                </section>
+            </div>
         </main>
     </div>
     <!-- 
@@ -90,6 +106,10 @@
             <!-- <img src="images/pattern-curve.svg" alt=""> -->
         </div>
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

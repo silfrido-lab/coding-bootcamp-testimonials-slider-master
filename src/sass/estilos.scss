@@ -7,17 +7,23 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-}
-
-.center {
     @media screen and (min-width: 1024px) {
+        background: url(../../images/pattern-curve.svg) bottom left no-repeat;
+        background-size: 440px, cover;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 70vh;
+        align-items: center
     }
 }
 
+// .center {
+//     @media screen and (min-width: 1024px) {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 70vh;
+//     }
+// }
 :root {
     --dark-Blue: rgb(32, 32, 70);
     --grayish-Blue: rgb(186, 186, 207);
@@ -80,6 +86,14 @@ body {
         color: var(--grayish-Blue);
         margin-top: .2em;
         // border: 1px solid red;
+    }
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+        position: relative;
+        left: 40%;
+        span {
+            text-align: left;
+        }
     }
 }
 
