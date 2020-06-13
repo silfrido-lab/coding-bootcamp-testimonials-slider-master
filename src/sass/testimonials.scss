@@ -1,31 +1,91 @@
-.testimonial-content {
-    display: grid;
-    grid-row-gap: 1em;
-    justify-content: center;
-    .testimonial-image {
-        height: 311px;
-        // border: 1px solid red;
-        // background: url(../../images/image-tanya.jpg) center no-repeat;
-        background: url(../../images/pattern-bg.svg) center no-repeat;
-        background-size: 290px, cover;
-        // width: 330px;
-        position: relative;
-        .testimonial-img {
-            max-width: 225px;
-            border-radius: 5px;
-            width: 100%;
-            margin: 0 auto;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 45px;
-            box-shadow: 0 50px 70px -50px;
-            object-fit: cover;
+.testimonial {
+    max-width: 850px;
+    margin: 0 auto;
+    .testimonial-content {
+        .testimonial-image {
+            height: 311px;
+            // border: 1px solid red;
+            // background: url(../../images/image-tanya.jpg) center no-repeat;
+            background: url(../../images/pattern-bg.svg) center no-repeat;
+            background-size: 290px, cover;
+            // width: 330px;
+            position: relative;
+            @media screen and (min-width: 1024px) {
+                background-size: 333px, cover;
+            }
+            .testimonial-img {
+                max-width: 225px;
+                border-radius: 5px;
+                width: 100%;
+                margin: 0 auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 45px;
+                box-shadow: 0 50px 70px -50px;
+                object-fit: cover;
+                @media screen and (min-width: 1024px) {
+                    max-width: 260px;
+                    top: 30px;
+                }
+            }
+            .button {
+                width: 86px;
+                height: 39px;
+                border-radius: 30px;
+                position: absolute;
+                top: 80%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                border: none;
+                outline: none;
+                @media screen and (min-width: 1021px) {
+                    top: 87%;
+                    right: 25%;
+                }
+            }
+            .antes::after {
+                content: url(../../images/icon-next.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                bottom: 0;
+                right: 5px;
+            }
+            .siguente::before {
+                content: url(../../images/icon-prev.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                bottom: 0;
+                left: 5px;
+            }
         }
-    }
-    .testimonial-text-content {
-        background: url(../../images/pattern-quotes.svg) center top no-repeat;
-        background-size: 70px;
-        padding-top: .4em;
+        .testimonial-text-content {
+            background: url(../../images/pattern-quotes.svg) center top no-repeat;
+            background-size: 70px;
+            padding-top: .4em;
+            @media screen and (min-width: 1024px) {
+                background-position: 220px top;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "content image";
+            justify-content: center;
+            align-items: center;
+            .testimonial-image {
+                grid-area: image;
+            }
+        }
+        .testimonial-text-content {
+            grid-area: content;
+        }
     }
 }

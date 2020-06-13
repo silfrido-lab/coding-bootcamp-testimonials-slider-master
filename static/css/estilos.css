@@ -1,15 +1,19 @@
-.testimonial-content {
-  display: grid;
-  grid-row-gap: 1em;
-  justify-content: center;
+.testimonial {
+  max-width: 850px;
+  margin: 0 auto;
 }
-.testimonial-content .testimonial-image {
+.testimonial .testimonial-content .testimonial-image {
   height: 311px;
   background: url(../../images/pattern-bg.svg) center no-repeat;
   background-size: 290px, cover;
   position: relative;
 }
-.testimonial-content .testimonial-image .testimonial-img {
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-content .testimonial-image {
+    background-size: 333px, cover;
+  }
+}
+.testimonial .testimonial-content .testimonial-image .testimonial-img {
   max-width: 225px;
   border-radius: 5px;
   width: 100%;
@@ -21,16 +25,80 @@
   box-shadow: 0 50px 70px -50px;
   object-fit: cover;
 }
-.testimonial-content .testimonial-text-content {
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-content .testimonial-image .testimonial-img {
+    max-width: 260px;
+    top: 30px;
+  }
+}
+.testimonial .testimonial-content .testimonial-image .button {
+  width: 86px;
+  height: 39px;
+  border-radius: 30px;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 1021px) {
+  .testimonial .testimonial-content .testimonial-image .button {
+    top: 87%;
+    right: 25%;
+  }
+}
+.testimonial .testimonial-content .testimonial-image .antes::after {
+  content: url(../../images/icon-next.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 5px;
+}
+.testimonial .testimonial-content .testimonial-image .siguente::before {
+  content: url(../../images/icon-prev.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 5px;
+}
+.testimonial .testimonial-content .testimonial-text-content {
   background: url(../../images/pattern-quotes.svg) center top no-repeat;
   background-size: 70px;
   padding-top: 0.4em;
 }
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-content .testimonial-text-content {
+    background-position: 220px top;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "content image";
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-content .testimonial-image {
+    grid-area: image;
+  }
+}
+.testimonial .testimonial-content .testimonial-text-content {
+  grid-area: content;
+}
 
 .footer .wave {
   background: url(../../images/pattern-curve.svg) bottom left no-repeat;
-  background-size: 340px, cover;
-  height: 100px;
+  background-size: 440px, cover;
+  height: 200px;
 }
 
 body {
@@ -40,6 +108,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
 }
 
 :root {
@@ -62,10 +139,56 @@ body {
 .testimonial-text span {
   display: block;
   text-align: center;
+  font-size: 0.8em;
 }
 .testimonial-text span:nth-child(1) {
   padding-top: 2em;
   font-weight: bold;
+}
+.testimonial-text span:nth-child(2) {
+  color: var(--grayish-Blue);
+  margin-top: 0.2em;
+}
+@media screen and (min-width: 1024px) {
+  .testimonial-text {
+    text-align: left;
+    position: relative;
+    left: 40%;
+  }
+  .testimonial-text span {
+    text-align: left;
+  }
+}
+
+.testimonial-text-front {
+  color: var(--dark-Blue);
+  font-weight: 300;
+  font-size: 0.6em;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 0.3em;
+}
+.testimonial-text-front span {
+  display: block;
+  text-align: center;
+  font-size: 0.8em;
+}
+.testimonial-text-front span:nth-child(1) {
+  padding-top: 2em;
+  font-weight: bold;
+}
+.testimonial-text-front span:nth-child(2) {
+  color: var(--grayish-Blue);
+  margin-top: 0.2em;
+}
+
+.is-hidden {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .is-hidden {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

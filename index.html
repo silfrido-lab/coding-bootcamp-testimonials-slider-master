@@ -17,33 +17,72 @@
 </head>
 
 <body>
-    <main class="testimonial">
+    <div class="center">
+        <main class="testimonial">
+            <input type="radio" value="slide-1" name=" next " id="slider-1" checked>
+            <input type="radio" value="slide-1" name=" next " id="slider-1" checked>
 
-        <article class="testimonial-content">
-            <div class="testimonial-image">
-                <img class="testimonial-img" src="images/image-tanya.jpg" width="200px" alt="tanya">
+            <section class="testimonial-content slide-1">
+                <!-- <label for="slide-1"> -->
+                <div class="testimonial-image">
+                    <img class="testimonial-img" src="images/image-tanya.jpg" width="200px" alt="tanya">
+                    <button class="button">
+                        <div class="antes">
+                            <label for="slider-1"></label>
+                        </div>
+                        <div class="siguente">
+                            <label for="slider-2"></label>
+                        </div>
+                    </button>
 
-            </div>
-            <div class="wrapper">
-                <div class="testimonial-text-content">
-
-                    <p class="testimonial-text">
-                        “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ” <span>Tanya Sinclair</span> <span>UX Engineer </span>
-                        <!--If you want to lay the best foundation
-                        possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” John Tarkpor Junior Front-end Developer -->
-                    </p>
                 </div>
-            </div>
+                <div class="wrapper">
+                    <div class="testimonial-text-content">
 
-        </article>
-    </main>
+                        <p class="testimonial-text">
+                            “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ” <span>Tanya Sinclair</span> <span>UX Engineer </span>
+                            <!--If you want to lay the best foundation
+                        possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” John Tarkpor Junior Front-end Developer -->
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <section class="testimonial-content slide-2 is-hidden">
+                <!-- <label for="slide-2"> -->
+                <div class="testimonial-image">
+                    <img class="testimonial-img" src="images/image-john.jpg" width="200px" alt="tanya">
+
+                </div>
+                <div class="wrapper">
+                    <div class="testimonial-text-content">
+
+                        <p class="testimonial-text-front">
+                            " If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+                            <span>John Tarkpor</span>
+                            <span>Junior Front-end Developer</span>
+
+                        </p>
+                    </div>
+                </div>
+
+                <button class="button">
+                    <div class="antes"></div>
+                    <div class="siguente"></div>
+                </button>
+            </section>
+        </main>
+    </div>
     <!-- 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+            </div> -->
     <footer class="footer">
         <div class="wave">
-
+            <!-- <img src="images/pattern-curve.svg" alt=""> -->
         </div>
     </footer>
 </body>

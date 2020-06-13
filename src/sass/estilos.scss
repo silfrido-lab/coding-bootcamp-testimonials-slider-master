@@ -9,6 +9,15 @@ body {
     height: 100vh;
 }
 
+.center {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+}
+
 :root {
     --dark-Blue: rgb(32, 32, 70);
     --grayish-Blue: rgb(186, 186, 207);
@@ -19,19 +28,72 @@ body {
     padding-top: 1em;
 }
 
-.testimonial-text {
+@mixin text {
     color: var(--dark-Blue);
     font-weight: 300;
     font-size: .6em;
     text-align: center;
     margin-bottom: 0;
+}
+
+.testimonial-text {
+    @include text;
     span {
         display: block;
         text-align: center;
         // border: 1px solid red;
+        font-size: .8em;
     }
     span:nth-child(1) {
         padding-top: 2em;
         font-weight: bold;
     }
+    span:nth-child(2) {
+        color: var(--grayish-Blue);
+        margin-top: .2em;
+        // border: 1px solid red;
+    }
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+        position: relative;
+        left: 40%;
+        span {
+            text-align: left;
+        }
+    }
 }
+
+.testimonial-text-front {
+    @include text;
+    padding: 0 .3em;
+    span {
+        display: block;
+        text-align: center;
+        // border: 1px solid red;
+        font-size: .8em;
+    }
+    span:nth-child(1) {
+        padding-top: 2em;
+        font-weight: bold;
+    }
+    span:nth-child(2) {
+        color: var(--grayish-Blue);
+        margin-top: .2em;
+        // border: 1px solid red;
+    }
+}
+
+.is-hidden {
+    display: none;
+    @media screen and (min-width: 1024px) {
+        display: none !important;
+    }
+}
+
+// .center {
+//     @media screen and (min-width: 1024px) {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
