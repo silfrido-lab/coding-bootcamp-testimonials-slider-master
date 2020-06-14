@@ -1,7 +1,6 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
-![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
-
+![Design preview for the Coding Bootcamp Testimonials Slider coding challenge]('https://repository-images.githubusercontent.com/270179033/abb38b80-a8e1-11ea-9e73-190572e0cf7d')
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
